@@ -1,0 +1,225 @@
+@media (max-width: 768px) {
+  .div1 {
+    margin: 0 1rem;
+    width: 90%;
+  }
+  .panel {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*------------------------------------------ nav css ----------------*/
+
+nav {
+  background-color: rgb(145, 131, 131);
+  height: 3rem;
+  width: 100%;
+}
+
+.div1 {
+  margin-left: 2rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  list-style: none;
+}
+
+/* ------------------------------------------------------------------ */
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------------   MAIN   ------------------ */
+.panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player {
+  width: auto;
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name,
+.score,
+.reset,
+.clear,
+.ok {
+  height: 2rem;
+  border-radius: 10rem;
+  width: 8rem;
+  background-color: rgb(145, 131, 131);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.name {
+  justify-content: flex-start;
+}
+
+.name input,
+.score label {
+  max-width: 65%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: 0px;
+}
+
+.current {
+  box-shadow: 0 0 15px 3px #00e1ff;
+}
+
+.score label {
+  color: rgb(77, 218, 72);
+  font-weight: 600;
+}
+
+.name input:focus {
+  outline: none;
+}
+
+.sign {
+  border-radius: 100%;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin: 0 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign img {
+  margin: auto;
+  height: 60%;
+  object-fit: cover;
+}
+.score {
+  background-color: rgb(221, 221, 221);
+  margin: 0 1rem;
+}
+/* ------------------------------------------------------------------ */
+
+/* ------------------------   BOARD  --------------------------------- */
+
+.board {
+  margin-top: 3rem;
+  height: auto;
+  width: 25rem;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: repeat(3, 0fr);
+  background-color: #d9d9d9;
+  padding: 0.5rem;
+}
+
+.cell {
+  background-color: #f8f8f8;
+  height: 7rem;
+  width: 7rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.cell img {
+  margin: 2rem;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+}
+
+.cell img {
+  z-index: -1;
+}
+
+/* ------------------------   CLEAR && RESET  --------------------------------- */
+
+.buttons {
+  margin-top: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reset,
+.clear {
+  color: #fff;
+}
+
+/* ---------------------------------------------P O P - P O P =--------------- */
+
+.pop-up-background {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+  opacity: 0;
+}
+
+.pop-up {
+  width: 30rem;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+}
+
+.pop-up p {
+  max-width: 80%;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+}
+.ok {
+  position: relative;
+  top: 7rem;
+}

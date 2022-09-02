@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <nav class="nav1">
+      <div class="div1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
+    </nav>
+    <main>
+      <!-- Name and Scores -->
+      <div class="panel">
+        <div class="player">
+          <div class="name current">
+            <div class="sign">
+              <img src="./images/zero.svg" />
+            </div>
+            <input type="text" value="Player O" />
+          </div>
+          <div class="score">
+            <label id="scoreO" for="score">0</label>
+          </div>
+        </div>
+        <div class="player">
+          <div class="name">
+            <div class="sign">
+              <img src="./images/cross.svg" />
+            </div>
+            <input type="text" value="Player X" />
+          </div>
+          <div class="score">
+            <label id="scoreX" for="score">0</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Board -->
+      <div class="board">
+        <div class="cell" id="0-0">
+          <img class="cross" src="/" alt="" />
+        </div>
+
+        <div class="cell" id="0-1">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="0-2">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="1-0">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="1-1">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="1-2">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="2-0">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="2-1">
+          <img class="cross" src="" alt="" />
+        </div>
+
+        <div class="cell" id="2-2">
+          <img class="cross" src="" alt="" />
+        </div>
+      </div>
+
+      <!-- Pop-Up -->
+      <div class="pop-up-background">
+        <div class="pop-up">
+          <p class="winner">sample text</p>
+          <div class="ok">
+            <label for="ok">OK</label>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="reset">
+          <label for="reset">RESET</label>
+        </div>
+        <div class="clear">
+          <label for="reset">CLEAR</label>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="script.js"></script>
+</html>
+
+<!-- https://in.pinterest.com/pin/598556606705287370/ -->
